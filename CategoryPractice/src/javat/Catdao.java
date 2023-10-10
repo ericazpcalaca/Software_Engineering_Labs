@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import javax.swing.tree.RowMapper;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Map;
 
 //@Autowired
 @Component
@@ -31,5 +32,22 @@ public class Catdao {
             c.setCatdesc(rs.getString(2));
             return c;
         });
+    }
+
+    public int insertData(final Category category){
+        return template.update("insert into category values(?,?)",category.getCatcode(),category.getCatdesc());
+    }
+
+    public int deleteData(String cat){
+        return template.update("delete from category where catcode= ?", cat);
+    }
+
+    public int editData(final Category category, String cat){
+        return template.update("update category set catcode= ?, catdesc= ? where catcode= ?",category.getCatcode(),category.getCatdesc(),cat);
+    }
+
+    //Check if the date is already existing
+    public List<Map<String,Object>> getcat(String cat){
+        return template.queryForList("SELECT  * FROM category WHERE catcode= ?", cat);
     }
 }
