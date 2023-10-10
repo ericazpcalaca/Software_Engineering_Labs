@@ -99,4 +99,22 @@ public class CategoryController {
         model.clear();
         return "redirect:/";
     }
+
+    //Controler methods for the item table
+    @GetMapping(path="/see-todo")
+    public String seetodo(ModelMap model, @RequestParam(defaultValue = "") String id) throws SQLException, ClassNotFoundException{
+        List<Map<String,Object>> x = dao.getitem(id);
+        if(x.size()==0){
+            model.put("errorMessage","No items in this category");
+            return "redirect:/category";
+        }
+
+        model.addAttribute("itemlist",x);
+        return "items";
+    }
+
+    @PostMapping(path="/see-todo")
+    public String seetodo2(ModelMap model) throws SQLException, ClassNotFoundException{
+        return "redirect:/";
+    }
 }

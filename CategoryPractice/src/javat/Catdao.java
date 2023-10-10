@@ -50,4 +50,10 @@ public class Catdao {
     public List<Map<String,Object>> getcat(String cat){
         return template.queryForList("SELECT  * FROM category WHERE catcode= ?", cat);
     }
+
+    //Search the items table for existing items belonging to a category
+    public List<Map<String,Object>>getitem(String cat){
+        return template.queryForList("SELECT * from items WHERE catcode= ?", cat);
+    }
 }
+
