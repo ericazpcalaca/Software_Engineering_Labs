@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
-@SessionAttributes({"errorMessage"})
+@SessionAttributes({"id","errorMessage"})
 @RequestMapping
 @Controller
 public class CategoryController {
@@ -64,5 +64,39 @@ public class CategoryController {
         dao.insertData(cc);
         model.addAttribute("cc",cc);
         return "redirect:/category";
+    }
+
+    @GetMapping(path = "/update-todo")
+    public String showUpdateTodoPage(ModelMap model, @RequestParam(defaultValue = "") String id) throws SQLException, ClassNotFoundException{
+        model.put("id",id);
+
+        List<Map<String,Object>> x = dao.getcat(id);
+
+        x.forEach(rowMap->{
+            String iid = (String) rowMap.get("catcode");
+            model.put("id",iid);
+            String ccdesc = (String) rowMap.get("catdesc");
+            model.put("desc",ccdesc);
+        });
+
+        return "catedit";
+    }
+
+    @PostMapping(path="/update-todo")
+    public String showUpdate(ModelMap model, @RequestParam String catcode, String catdesc) throws SQLException, ClassNotFoundException{
+        String iid = (String) model.get("id");
+        Category cc = new Category();
+        cc.setCatcode(catcode);
+        cc.setCatdesc(catdesc);
+        dao.editData(cc,iid);
+
+        return "redirect:/";
+    }
+
+    @GetMapping(path="delete-todo")
+    public String deleteTodo(ModelMap model, @RequestParam String id)throws SQLException, ClassNotFoundException{
+        dao.deleteData(id);
+        model.clear();
+        return "redirect:/";
     }
 }

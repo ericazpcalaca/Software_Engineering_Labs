@@ -11,8 +11,13 @@
   <component name="ChangeListManager">
     <list default="true" id="b6cd1f4b-07f3-4901-ae8d-fd22149ccd05" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javat/Catdao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javat/Catdao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/javat/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javat/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntellijExercise1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntellijExercise1/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntellijExercise1/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntellijExercise1/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntellijExercise1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntellijExercise1/.idea/vcs.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +154,6 @@
         <option name="BuildArtifacts" enabled="true">
           <artifact name="MavenCategory:war exploded" />
         </option>
-        <option name="LaunchBrowser.Before.Run" url="http://localhost:8080/MavenCategory_war_exploded/" />
       </method>
     </configuration>
   </component>
