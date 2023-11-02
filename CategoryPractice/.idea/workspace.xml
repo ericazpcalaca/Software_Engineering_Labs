@@ -11,7 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b6cd1f4b-07f3-4901-ae8d-fd22149ccd05" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javat/Catdao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javat/Catdao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/javat/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javat/CategoryController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -161,6 +160,9 @@
       <option name="presentableId" value="Default" />
       <updated>1696885732203</updated>
       <workItem from="1696885733249" duration="3313000" />
+      <workItem from="1697847180293" duration="22000" />
+      <workItem from="1698444358691" duration="62000" />
+      <workItem from="1698706921235" duration="9000" />
     </task>
     <servers />
   </component>
