@@ -20,14 +20,20 @@ Labs from the Software Engineering Class
 - [x] Created the 'Item Category' with a 'Category Code' field and a 'Description' field
 - [x] Picked up the code and description of the items that are on the table 'inventory'
 
-## Week 05 - Quiz 1
-- [x] No files
+## Week 05 - Quiz 1 & Spring MVC using JAR
+### Lab4 - Spring Boot Web Application using JAR archives, JPA, MySQL, Thymeleaf, and embedded Tomcat.
+- [x] Used the Spring Initializer to create a project that will fill out the Student table
 
 ## Week 06 - Spring MVC with XML Part II
 ### Lab4 - CategoryPractice part II
 - [x] Added the 'Add Category' and 'Edit Page' on the CategoryPractice project
 - [x] Notice that there is an error that if I try to edit something that already exists, it will have a duplicate
 
-### Week 07 - Spring MVC using JAR
-### Lab4 - Spring Boot Web Application using JAR archives, JPA, MySQL, Thymeleaf, and embedded Tomcat.
-- [x] Used the Spring Initializer to create a project that will fill out the Student table
+## Week 07 - Spring MVC using JAR part II
+### Lab5 - Spring Boot Web Application using JAR archives, JPA, MySQL, Thymeleaf, and embedded Tomcat. part II
+- [x] Created a nav menu with a dropdown menu
+- [x] Created a form that will add new students to the list
+- [x] Now you can also edit and remove students from the list
+
+## Week 08 - Midterm 
+- [x]  No files
